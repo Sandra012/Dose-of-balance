@@ -311,7 +311,8 @@ if ( ! function_exists( 'mts_copyrights_credit' ) ) {
 		<div class="copyright-left-text">Copyright &copy; <?php echo date("Y") ?> <a href="<?php echo home_url(); ?>" title="<?php bloginfo('description'); ?>" rel="nofollow"><?php bloginfo('name'); ?></a>.</div>
 		<div class="copyright-text">
 			<?php
-				$copyright_text = get_theme_mod('copyright_text', 'Theme by <a href="http://mythemeshop.com/" rel="nofollow">MyThemeShop</a>.');
+			//Theme by <a href="http://mythemeshop.com/" rel="nofollow">MyThemeShop</a>.
+				$copyright_text = get_theme_mod('copyright_text', '');
 				echo $copyright_text;
 			?>
 		</div>
